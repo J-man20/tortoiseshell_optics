@@ -17,6 +17,13 @@ html{
   }
 }
 
+@media only screen and (max-width:480px){
+  .container{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
 /* Header */
 #company{
   background-image: url("../images/glasses-bg.png");
@@ -52,6 +59,13 @@ html{
   }
 
 }
+
+@media only screen and (max-width:480px){
+  .header{
+    position: relative;
+    top: 0rem;
+  }
+}
 .logo{
   display: flex;
   align-items: center;
@@ -86,10 +100,24 @@ html{
    width: 45%;
  }
 
+ @media only screen and (max-width:1024px){
+   .main_banner{
+     font-size: 1.33rem;
+     padding: 0.75rem 4rem;
+     margin: 5rem 2rem 0rem 0rem;
+   }
+ }
+
  /* Icons */
  #icons{
    display: flex;
    justify-content: center;
+ }
+
+ @media only screen and (max-width:1024px){
+   #icons{
+     margin: 0 auto;
+   }
  }
 
 #exams, #fittings, #delivery{
@@ -114,6 +142,13 @@ html{
 #details{
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width:1024px) {
+  #details{
+    margin: 0 auto;
+  }
+
 }
 
 #philosophy, #appointments{

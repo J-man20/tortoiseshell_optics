@@ -44,7 +44,11 @@ html{
  }
 
  li{
-   padding: 1rem 2rem;
+  padding: 1rem 2rem;
+ }
+
+ #mobile-navigation{
+   display: none;
  }
 
  .main_banner{
@@ -54,6 +58,7 @@ html{
    line-height: 1.2rem;
    margin-top: 10rem;
    padding: 1.5rem 5rem;
+   width: 45%;
  }
 
  /* Icons */
@@ -103,4 +108,23 @@ html{
   color:white;
   padding:0.5rem 1.25rem;
   margin-bottom: 1rem;
+}
+
+/* Footer */
+
+.bottom{
+  display: flex;
+  background-color: azure;
+  margin-top: 5rem;
+}
+
+.black-logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.black-logo img{
+  height:1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
 }

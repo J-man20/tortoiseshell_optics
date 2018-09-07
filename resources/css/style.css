@@ -11,3 +11,41 @@ html{
 }
 
 /* Header */
+#company{
+  background-image: url("../images/glasses-bg.png");
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header{
+  background-color: cadetblue;
+  color:white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 1rem;
+}
+.logo img{
+  height:1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+ ul{
+   display: flex;
+   flex-direction: row;
+ }
+
+ li{
+   padding: 1rem 2rem;
+ }
+
+ #main_banner{
+   position: relative;
+   top:10rem;
+   background-color: white;
+   padding:1.5rem 5rem;
+   line-height: 1.2rem;
+   font-size: 2rem;
+   font-weight: bold;
+ }

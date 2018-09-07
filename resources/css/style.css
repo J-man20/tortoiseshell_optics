@@ -14,6 +14,7 @@ html{
 #company{
   background-image: url("../images/glasses-bg.png");
   height: 30rem;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -25,6 +26,11 @@ html{
   position: relative;
   top: 1rem;
 }
+.logo{
+  display: flex;
+  align-items: center;
+}
+
 .logo img{
   height:1.5rem;
   padding-left: 2rem;
@@ -48,4 +54,7 @@ html{
    line-height: 1.2rem;
    font-size: 2rem;
    font-weight: bold;
+   display: flex;
+   justify-content: flex-end;
+   width:35%;
  }

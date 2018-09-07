@@ -278,18 +278,10 @@ html{
   margin-top: 5rem;
 }
 
-/* Mobile Bottom */
+/* Mobile Bottom*/
 @media only screen and (max-width:480px){
   .bottom{
     width:100%;
-  }
-
-  .black-logo img{
-
-  }
-
-  .black-logo p{
-    display: none;
   }
 }
 
@@ -302,4 +294,17 @@ html{
 .black-logo img{
   height:1.5rem;
   padding: 4rem 1rem 4rem 4rem;
+}
+
+ /*Mobile Black logo */
+ @media only screen and (max-width:480px){
+ .black-logo img{
+   display: block;
+   margin:0 auto;
+
+ }
+
+ .black-logo p{
+   display: none;
+ }
 }

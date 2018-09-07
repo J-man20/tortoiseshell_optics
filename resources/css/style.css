@@ -122,6 +122,7 @@ html{
  }
 
  .main_banner{
+   float: right;
    background-color: white;
    font-weight: bold;
    font-size: 2rem;

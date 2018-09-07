@@ -10,6 +10,13 @@ html{
   margin: 0 auto;
 }
 
+@media only screen and (max-width:1024px){
+  .container{
+    max-width:100%;
+    margin: 0 auto;
+  }
+}
+
 /* Header */
 #company{
   background-image: url("../images/glasses-bg.png");
@@ -17,6 +24,16 @@ html{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width:1024px) {
+  #company{
+    height:22rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 }
 .header{
   background-color: cadetblue;
@@ -26,6 +43,14 @@ html{
   align-items: center;
   position: relative;
   top: 1rem;
+}
+
+@media only screen and (max-width:1024px) {
+  .header{
+    position: relative;
+    top:0rem;
+  }
+
 }
 .logo{
   display: flex;

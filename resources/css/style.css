@@ -9,14 +9,14 @@ html{
   max-width: 960px;
   margin: 0 auto;
 }
-
+ /* Tablet Container */
 @media only screen and (max-width:1024px){
   .container{
     max-width:100%;
     margin: 0 auto;
   }
 }
-
+ /*Mobile Container */
 @media only screen and (max-width:480px){
   .container{
     max-width: 100%;
@@ -32,7 +32,7 @@ html{
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+  /*Tablet BG Img */
 @media only screen and (max-width:1024px) {
   #company{
     height:22rem;
@@ -42,6 +42,16 @@ html{
   }
 
 }
+ /*Mobile BG Img */
+@media only screen and (max-width:480px){
+ #company{
+   height: 17rem;
+   background-position: 20%;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+}
+
 .header{
   background-color: cadetblue;
   color:white;
@@ -51,7 +61,7 @@ html{
   position: relative;
   top: 1rem;
 }
-
+ /* Tablet Header */
 @media only screen and (max-width:1024px) {
   .header{
     position: relative;
@@ -59,13 +69,15 @@ html{
   }
 
 }
-
+ /*Mobile Header */
 @media only screen and (max-width:480px){
   .header{
     position: relative;
     top: 0rem;
   }
 }
+
+
 .logo{
   display: flex;
   align-items: center;
@@ -76,6 +88,12 @@ html{
   padding-left: 2rem;
   padding-right: 1rem;
 }
+ /*Mobile Header */
+@media only screen and (max-width:480px){
+  .logo p{
+     display: none;
+   }
+}
 
  ul{
    display: flex;
@@ -85,9 +103,22 @@ html{
  li{
   padding: 1rem 2rem;
  }
+ /* Mobile Navigation */
+ @media only screen and (max-width:480px){
+   .desktop{
+     display: none;
+   }
+ }
 
- #mobile-navigation{
+ .mobile{
    display: none;
+ }
+  /*Mobile Navigation */
+ @media only screen and (max-width:480px){
+   #mobile-navigation ul{
+     display: block;
+     text-align: right;
+   }
  }
 
  .main_banner{
@@ -100,6 +131,7 @@ html{
    width: 45%;
  }
 
+   /* Main Banner Tablet */
  @media only screen and (max-width:1024px){
    .main_banner{
      font-size: 1.33rem;
@@ -107,18 +139,47 @@ html{
      margin: 5rem 2rem 0rem 0rem;
    }
  }
+  /*Main Banner Mobile */
+ @media only screen and (max-width:480px){
+  .main_banner{
+     margin-top: 9rem;
+     width:100%;
+     padding: 1rem auto;
+     text-align: center;
+     font-size: 1rem;
+   }
+ }
+
 
  /* Icons */
  #icons{
    display: flex;
    justify-content: center;
  }
-
+ /*Icons Tablet */
  @media only screen and (max-width:1024px){
    #icons{
      margin: 0 auto;
    }
  }
+
+  /*Mobile Icons */
+  @media only screen and (max-width:480px){
+    #icons{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin:3.77rem auto;
+    }
+
+    #exams, #fittings, #delivery{
+    margin-top: 1.54rem;
+    }
+
+    #exams p, #fittings p, #delivery p{
+      font-size: 0.77rem;
+    }
+  }
 
 #exams, #fittings, #delivery{
   display: flex;
@@ -144,11 +205,24 @@ html{
   justify-content: center;
 }
 
+ /* Tablet Details */
 @media only screen and (max-width:1024px) {
   #details{
     margin: 0 auto;
   }
 
+}
+
+/*Mobile Details */
+@media only screen and (max-width:480px){
+  #details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 #philosophy, #appointments{
@@ -159,8 +233,26 @@ html{
   width:35%;
 }
 
+
 #appointments{
   margin-left: 5%;
+}
+
+/* Mobile Philosophy and Appointments */
+@media only screen and (max-width:480px){
+  #philosophy, #appointments{
+    width:100%;
+  }
+
+ #appointments{
+   margin-top: 4rem;
+ }
+
+  #philosophy p, #appointments p{
+    margin-top: 1rem;
+    font-size: 0.77rem;
+  }
+
 }
 
 .title{
@@ -170,12 +262,35 @@ html{
   margin-bottom: 1rem;
 }
 
+ /*Mobile Title */
+ @media only screen and (max-width:480px){
+   .title{
+     width:100%;
+     text-align: center;
+   }
+ }
+
 /* Footer */
 
 .bottom{
   display: flex;
   background-color: azure;
   margin-top: 5rem;
+}
+
+/* Mobile Bottom */
+@media only screen and (max-width:480px){
+  .bottom{
+    width:100%;
+  }
+
+  .black-logo img{
+
+  }
+
+  .black-logo p{
+    display: none;
+  }
 }
 
 .black-logo{

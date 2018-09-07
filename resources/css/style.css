@@ -79,3 +79,28 @@ html{
 #fittings img, #delivery img{
   width:5rem;
 }
+
+/* Philosophy and Appointments */
+#details{
+  display: flex;
+  justify-content: center;
+}
+
+#philosophy, #appointments{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width:35%;
+}
+
+#appointments{
+  margin-left: 5%;
+}
+
+.title{
+  background-color: cadetblue;
+  color:white;
+  padding:0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}

@@ -143,7 +143,7 @@ html{
   /*Main Banner Mobile */
  @media only screen and (max-width:480px){
   .main_banner{
-     margin-top: 9rem;
+     margin: 9rem auto;
      width:100%;
      padding: 1rem auto;
      text-align: center;
@@ -232,7 +232,6 @@ margin-top: 1.54rem;
 #philosophy, #appointments{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   width:35%;
 }

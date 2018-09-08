@@ -77,7 +77,6 @@ html{
   }
 }
 
-
 .logo{
   display: flex;
   align-items: center;
@@ -95,12 +94,19 @@ html{
    }
 }
 
+ .desktop{
+   display: flex;
+ }
+
  ul{
    display: flex;
    flex-direction: row;
+   justify-content: space-between;
  }
 
  li{
+   flex-direction: row;
+   justify-content: space-between;
   padding: 1rem 2rem;
  }
  /* Mobile Navigation */

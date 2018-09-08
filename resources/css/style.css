@@ -1,323 +1,244 @@
-/* Root em and container */
-html{
-  font-family: Helvetica;
+/* Universal Styles */
+
+html {
+  font-family: "Helvetica", sans-serif;
   font-size: 18px;
-  line-height: 1.4rem;
+  background-color: white;
 }
 
-.container{
+body {
+  line-height: 1.4;
+}
+
+.container {
   max-width: 960px;
-  margin: 0 auto;
+  margin: auto;
 }
- /* Tablet Container */
-@media only screen and (max-width:1024px){
-  .container{
-    max-width:100%;
-    margin: 0 auto;
-  }
-}
- /*Mobile Container */
-@media only screen and (max-width:480px){
-  .container{
-    max-width: 100%;
-    margin: 0 auto;
-  }
+
+.flex {
+  display: flex;
 }
 
 /* Header */
-#company{
-  background-image: url("../images/glasses-bg.png");
+
+header {
   height: 30rem;
-  background-position: center;
+  padding-top: 1rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  /*display: flex;*/
-}
-  /*Tablet BG Img */
-@media only screen and (max-width:1024px) {
-  #company{
-    height:22rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-}
- /*Mobile BG Img */
-@media only screen and (max-width:480px){
- #company{
-   height: 17rem;
-   background-position: 20%;
-   background-repeat: no-repeat;
-   background-size: cover;
- }
 }
 
-.header{
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
   background-color: cadetblue;
-  color:white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  top: 1rem;
-}
- /* Tablet Header */
-@media only screen and (max-width:1024px) {
-  .header{
-    position: relative;
-    top:0rem;
-    width:100%;
-  }
-
-}
- /*Mobile Header */
-@media only screen and (max-width:480px){
-  .header{
-    position: relative;
-    top: 0rem;
-  }
+  color: white;
 }
 
-.logo{
+nav div {
   display: flex;
   align-items: center;
 }
 
-.logo img{
-  height:1.5rem;
-  padding-left: 2rem;
-  padding-right: 1rem;
-}
- /*Mobile Header */
-@media only screen and (max-width:480px){
-  .logo p{
-     display: none;
-   }
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
 }
 
- .desktop{
-   display: flex;
-   justify-content: flex-end;
- }
+nav ul {
+  margin-right: 1rem;
+}
 
- .desktop ul{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
- }
+nav li {
+  display: inline;
+  padding: 0 1rem;
+}
 
- li{
-   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem 2rem;
- }
- /* Mobile Navigation */
- @media only screen and (max-width:480px){
-   .desktop{
-     display: none;
-   }
- }
+.truncated-menu {
+  display: none;
+}
 
- .mobile{
-   display: none;
- }
-  /*Mobile Navigation */
- @media only screen and (max-width:480px){
-   .mobile{
-     display: block;
-     text-align: right;
-   }
- }
+header .flex {
+  justify-content: flex-end;
+}
 
- .main_banner{
-   float:right;
-   background-color: white;
-   font-weight: bold;
-   font-size: 2rem;
-   line-height: 2.4rem;
-   margin-top: 10rem;
-   padding: 1.5rem 5rem;
-   width: 45%;
- }
+.main-banner {
+  display: inline-block;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  background-color: white;
+}
 
-   /* Main Banner Tablet */
- @media only screen and (max-width:1024px){
-   .main_banner{
-     font-size: 1.33rem;
-     padding: 0.75rem 4rem;
-     margin: 5rem 2rem 0rem 0rem;
-   }
- }
-  /*Main Banner Mobile */
- @media only screen and (max-width:480px){
-  .main_banner{
-     margin: 9rem auto;
-     width:100%;
-     padding: 1rem auto;
-     text-align: center;
-     font-size: 1rem;
-   }
- }
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
 
- /* Icons */
- #icons{
-   display: flex;
-   justify-content: center;
- }
- /*Icons Tablet */
- @media only screen and (max-width:1024px){
-   #icons{
-     margin: 0 auto;
-   }
- }
-
-  /*Mobile Icons */
-  @media only screen and (max-width:480px){
-    #icons{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      margin:3.77rem auto;
-    }
-
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+    padding-top: 0;
   }
 
-  #exams, #fittings, #delivery{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  margin: 3rem;
-  height:8rem;
+  nav.container {
+    max-width: 100%;
+  }
+
+  .main-banner {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .main-banner h1 {
+    font-size: 1.33rem;
+  }
 }
 
- /*Mobile Icons */
-@media only screen and (max-width:480px){
-#exams, #fittings, #delivery{
-margin-top: 1.54rem;
+@media only screen and (max-width: 700px) {
+  .menu ul {
+    display: none;
+  }
+
+  .menu ul.truncated-menu {
+    display: block;
+  }
 }
 
-#exams p, #fittings p, #delivery p{
-  font-size: 0.77rem;
-}
+@media only screen and (max-width: 560px) {
+  header div span {
+    display: none;
+  }
+
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .main-banner {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    text-align: center;
+  }
+
+  .main-banner h1 {
+    font-size: 1rem;
+  }
 }
 
- #exams img{
-   width:3.5rem;
- }
+/* Supporting Sections */
 
-#fittings img, #delivery img{
-  width:5rem;
-}
-
-/* Philosophy and Appointments */
-#details{
+.supporting {
   display: flex;
   justify-content: center;
 }
 
- /* Tablet Details */
-@media only screen and (max-width:1024px) {
-  #details{
-    margin: 0 auto;
-  }
-
-}
-
-/*Mobile Details */
-@media only screen and (max-width:480px){
-  #details{
-    display: flex;
+@media only screen and (max-width: 560px) {
+  .supporting {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin: 0 auto;
-    width: 100%;
+    margin-top: 3rem;
   }
 }
 
-#philosophy, #appointments{
+/* Service Section */
+
+.service {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  width:35%;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
 }
 
-
-#appointments{
-  margin-left: 5%;
-}
-
-/* Mobile Philosophy and Appointments */
-@media only screen and (max-width:480px){
-  #philosophy, #appointments{
-    width:100%;
-  }
-
- #appointments{
-   margin-top: 4rem;
- }
-
-  #philosophy p, #appointments p{
-    margin-top: 1rem;
-    font-size: 0.77rem;
-  }
-
-}
-
-.title{
-  background-color: cadetblue;
-  color:white;
-  padding:0.5rem 1.25rem;
+.service img {
+  width: 5rem;
   margin-bottom: 1rem;
 }
 
- /*Mobile Title */
- @media only screen and (max-width:480px){
-   .title{
-     width:100%;
-     text-align: center;
-   }
- }
-
-/* Footer */
-
-.bottom{
-  display: flex;
-  background-color: azure;
-  margin-top: 5rem;
+.service img.paper-icon {
+  width: 3.5rem;
 }
 
-/* Mobile Bottom*/
-@media only screen and (max-width:480px){
-  .bottom{
-    width:100%;
+@media only screen and (max-width: 560px) {
+  .service {
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
   }
 }
 
-.black-logo{
+/* Info Section */
+
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.info p {
+  padding: 1rem 0;
+}
+
+.title {
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  font-weight: bold;
+  color: white;
+}
+
+@media only screen and (max-width: 560px) {
+  .info {
+    width: 100%;
+  }
+
+  .info .title {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .info p {
+    padding: 1rem;
+    font-size: .77rem;
+  }
+}
+
+/* Footer */
+
+footer {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  background-color: azure;
+  padding: 4rem 2rem;
 }
 
-.black-logo img{
-  height:1.5rem;
-  padding: 4rem 1rem 4rem 4rem;
+footer img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
 }
 
- /*Mobile Black logo */
- @media only screen and (max-width:480px){
- .black-logo img{
-   display: block;
-   margin:0 auto;
+@media only screen and (max-width: 560px) {
+  footer {
+    justify-content: center;
+  }
 
- }
-
- .black-logo p{
-   display: none;
- }
+  footer div {
+    display: none;
+  }
 }

@@ -10,6 +10,18 @@ html{
   margin:0 auto;
 }
 
+@media only screen and (max-width:1024px){
+  .container{
+    width:100%;
+  }
+}
+
+@media only screen and (max-width:425px){
+  .container{
+    width:100%;
+  }
+}
+
 /* Header */
 header{
   background-image: url("../images/glasses-bg.png");
@@ -65,7 +77,6 @@ nav{
   margin-right: 115px;
 }
 
-/* Tablet*/
 @media only screen and (max-width:1024px){
   header{
     padding-top:0rem;
@@ -75,7 +86,44 @@ nav{
   nav.container{
     max-width:100%;
   }
+
+  #banner{
+    font-size: 1.33rem;
+    padding:0.75rem 4rem;
+    top:5rem;
+    margin-right: 2rem;
+
+  }
 }
+
+@media only screen and (max-width:425px){
+  header{
+    background-position: 20%;
+    height:17rem;
+  }
+
+  .logo p{
+    display: none;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  .mobile{
+    display: inline-block;
+  }
+
+  #banner{
+    top:9rem;
+    padding:1rem 0;
+    font-size: 1rem;
+    text-align: center;
+    width:100%;
+    margin-right: 0;
+  }
+}
+
 /* Icons */
 .icons{
   display:flex;
@@ -113,6 +161,23 @@ nav{
   text-align: center;
 }
 
+@media only screen and (max-width:425px){
+  .icons{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 3.77rem 0;
+  }
+
+  .paper img, .ruler img, .truck img{
+    padding-top: 1.54rem;
+  }
+
+  .paper p, .ruler p, .truck p{
+    font-size: 0.77rem;
+  }
+}
+
 /* About */
 .about{
   display: flex;
@@ -137,6 +202,32 @@ nav{
   margin-top: 1rem;
 }
 
+@media only screen and (max-width:425px){
+  .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .philosophy, .appointments{
+    width:100%;
+  }
+
+  .appointments{
+    margin-top:4rem;
+  }
+
+  .title{
+    text-align: center;
+  }
+
+  .text{
+    font-size: 0.77rem;
+
+  }
+}
+
 /* Footer */
 .footer{
   background-color: azure;
@@ -149,4 +240,13 @@ nav{
 .footer img{
   height:1.5rem;
   padding:4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width:425px){
+.footer img{
+  margin:0 auto;
+}
+  .copyright{
+    display: none;
+  }
 }
